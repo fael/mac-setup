@@ -23,7 +23,7 @@ Safe to re-run; existing configs are backed up before symlinking.
 |------|--------|
 | Terminal | Ghostty, zsh, Oh My Zsh |
 | Editor | VS Code |
-| Browsers | Chrome, Chromium, Firefox |
+| Browsers | Chrome, Firefox |
 | Node | fnm + LTS Node |
 | Python | uv (installs a current Python) |
 | Containers | OrbStack + Docker Desktop |
