@@ -1,0 +1,27 @@
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[push]
+	autoSetupRemote = true
+	default = simple
+
+[core]
+	editor = code --wait
+	autocrlf = input
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+
+[merge]
+	conflictstyle = zdiff3
+
+[rerere]
+	enabled = true
+
+# Set these locally (do not commit secrets or personal identity into this repo):
+#   git config --global user.name "Your Name"
+#   git config --global user.email "you@example.com"
