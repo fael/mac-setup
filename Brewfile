@@ -1,5 +1,6 @@
 # CLI tools
 brew "git"
+brew "glab"
 brew "fnm"
 brew "uv"
 brew "jq"

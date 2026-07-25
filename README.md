@@ -27,7 +27,7 @@ Safe to re-run; existing configs are backed up before symlinking.
 | Node | fnm + LTS Node |
 | Python | uv (installs a current Python) |
 | Containers | OrbStack + Docker Desktop |
-| CLI | git, jq, ripgrep, fd, fzf, bat, eza, tree, wget, curl, watch, htop, tmux |
+| CLI | git, glab, jq, ripgrep, fd, fzf, bat, eza, tree, wget, curl, watch, htop, tmux |
 | Mac extras | Rectangle, Stats, AppCleaner, IINA |
 
 **Containers:** install both, but use **OrbStack** as the daily Docker runtime so it owns the `docker` CLI and you avoid socket conflicts with Docker Desktop. If `docker-desktop` fails during `brew bundle` (it needs sudo to link into `/usr/local/bin`), run `brew install --cask docker-desktop` in Terminal and enter your password, or install from the Docker website.
