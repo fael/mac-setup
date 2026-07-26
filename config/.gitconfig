@@ -25,3 +25,5 @@
 # Set these locally (do not commit secrets or personal identity into this repo):
 #   git config --global user.name "Your Name"
 #   git config --global user.email "you@example.com"
+[user]
+	name = Rafael Sá
