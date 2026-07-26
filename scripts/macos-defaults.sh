@@ -28,7 +28,11 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-# Dock: minimize to app icon, show indicators for open apps
+# Dock: autohide, smaller icons, magnification on hover
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock tilesize -int 44
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock largesize -int 64
 defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock show-process-indicators -bool true
 
