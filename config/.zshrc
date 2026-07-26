@@ -18,3 +18,8 @@ fi
 if command -v bat >/dev/null 2>&1; then
   alias cat="bat --paging=never"
 fi
+
+# zoxide (z) — jump to frecent directories
+if command -v zoxide >/dev/null 2>&1; then
+  eval "$(zoxide init zsh)"
+fi
