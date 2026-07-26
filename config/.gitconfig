@@ -22,8 +22,14 @@
 [rerere]
 	enabled = true
 
-# Set these locally (do not commit secrets or personal identity into this repo):
-#   git config --global user.name "Your Name"
-#   git config --global user.email "you@example.com"
+# Work identity is the default (primary).
 [user]
 	name = Rafael Sá
+	email = rafael.sa@olx.com
+
+# Personal identity for personal clones only (see ~/.gitconfig-personal).
+# Keep work repos outside these paths so they inherit the work email above.
+[includeIf "gitdir:~/Projects/personal/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/Projects/mac-setup/"]
+	path = ~/.gitconfig-personal
