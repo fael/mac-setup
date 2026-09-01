@@ -61,11 +61,16 @@ else
   echo "==> Oh My Zsh already installed"
 fi
 
+# 3b. Custom Oh My Zsh plugins (autosuggestions, syntax highlighting, …)
+bash "$ROOT/scripts/install-zsh-plugins.sh"
+
 # 4. Symlink configs
 echo "==> Linking config files..."
 link_file "$CONFIG_DIR/.zprofile" "$HOME/.zprofile"
 link_file "$CONFIG_DIR/.zshrc" "$HOME/.zshrc"
 link_file "$CONFIG_DIR/.gitconfig" "$HOME/.gitconfig"
+mkdir -p "$HOME/.config"
+link_file "$CONFIG_DIR/spaceship.zsh" "$HOME/.config/spaceship.zsh"
 
 # Ensure Homebrew is on PATH for the rest of this script (fresh shells use .zprofile)
 if [ -x /opt/homebrew/bin/brew ]; then
@@ -74,11 +79,11 @@ elif [ -x /usr/local/bin/brew ]; then
   eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-# 5. Node via fnm
-echo "==> Installing Node (fnm LTS)..."
-eval "$(fnm env --shell bash)"
-fnm install --lts
-fnm default lts-latest
+# 5. Node + pnpm via mise
+echo "==> Installing Node + pnpm via mise..."
+eval "$(mise activate bash)"
+mise use -g node@latest pnpm@10
+mise install
 
 # 6. Python via uv
 echo "==> Installing Python (uv)..."
@@ -109,7 +114,8 @@ echo
 echo "Versions:"
 command -v brew >/dev/null && brew --version | head -1 || true
 command -v git >/dev/null && git --version || true
-command -v fnm >/dev/null && fnm --version || true
+command -v mise >/dev/null && mise --version || true
 command -v node >/dev/null && node --version || true
+command -v pnpm >/dev/null && pnpm --version || true
 command -v uv >/dev/null && uv --version || true
 command -v python3 >/dev/null && python3 --version || true

@@ -2,7 +2,7 @@
 brew "git"
 brew "gh"
 brew "glab"
-brew "fnm"
+brew "mise"
 brew "uv"
 brew "jq"
 brew "ripgrep"
@@ -18,6 +18,10 @@ brew "watch"
 brew "htop"
 brew "tmux"
 brew "zsh"
+
+# Fonts
+cask "font-jetbrains-mono-nerd-font"
+cask "font-code-new-roman-nerd-font"
 
 # Apps
 cask "ghostty"

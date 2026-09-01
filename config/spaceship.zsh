@@ -1,0 +1,9 @@
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_DIR_TRUNC_REPO=false
+SPACESHIP_DOCKER_SHOW=false
+
+# Remove section prefixes ("in", "on", "via", …)
+SPACESHIP_PROMPT_PREFIXES_SHOW=false
+
+# Git
+SPACESHIP_GIT_SYMBOL=""
