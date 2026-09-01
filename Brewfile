@@ -1,3 +1,6 @@
+# Mac App Store CLI
+brew "mas"
+
 # CLI tools
 brew "git"
 brew "gh"
@@ -38,3 +41,6 @@ cask "orion"
 cask "granola"
 cask "altair-graphql-client"
 cask "vorssaint"
+
+# Mac App Store
+mas "Xcode", id: 497799835

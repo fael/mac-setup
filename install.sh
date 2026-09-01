@@ -28,6 +28,16 @@ link_file() {
 echo "==> mac-setup bootstrap"
 echo "    repo: $ROOT"
 
+# 0. Xcode Command Line Tools
+if ! xcode-select -p &>/dev/null; then
+  echo "==> Installing Xcode Command Line Tools..."
+  xcode-select --install
+  echo "    A dialog has opened — complete the installation, then re-run this script."
+  exit 1
+else
+  echo "==> Xcode Command Line Tools already installed"
+fi
+
 # 1. Homebrew
 if ! command -v brew >/dev/null 2>&1; then
   echo "==> Installing Homebrew..."

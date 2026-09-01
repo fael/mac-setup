@@ -2,6 +2,10 @@
 
 Idempotent bootstrap for a web-dev Mac: Homebrew packages, Oh My Zsh, mise (Node + pnpm), uv (Python), and shell/git config.
 
+## Prerequisites
+
+- Sign into the **Mac App Store** before running `install.sh` — required for Xcode to install via `mas`.
+
 ## One-command install
 
 ```bash
@@ -28,7 +32,7 @@ brew bundle --file=~/Projects/mac-setup/Brewfile
 | Area | Tools |
 |------|--------|
 | Terminal | Ghostty, zsh, Oh My Zsh (+ Spaceship theme + plugins below) |
-| Editor | VS Code |
+| Editor | VS Code, Xcode (+ CLT) |
 | Browsers | Chrome, Firefox, Orion |
 | Node | mise + latest Node + pnpm 10 |
 | Python | uv (installs a current Python) |
