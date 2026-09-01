@@ -72,6 +72,7 @@ install.sh               # bootstrap
 config/.zprofile         # Homebrew shellenv
 config/.zshrc            # Oh My Zsh + plugins + mise + aliases
 config/spaceship.zsh     # Spaceship prompt config (linked to ~/.config/spaceship.zsh)
+config/ghostty           # Ghostty terminal config (linked to ~/.config/ghostty/config)
 config/.gitconfig        # git defaults (work-primary identity)
 scripts/macos-defaults.sh
 scripts/install-zsh-plugins.sh

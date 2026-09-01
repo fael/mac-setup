@@ -57,6 +57,11 @@ if command -v zoxide >/dev/null 2>&1; then
   eval "$(zoxide init zsh)"
 fi
 
+# Tab completion: show menu and navigate with arrow keys
+zstyle ':completion:*' menu select
+# Autosuggestions: validate paths so only existing dirs are suggested
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 # Shortcuts
 alias c="clear"
 alias p="pnpm"

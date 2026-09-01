@@ -69,8 +69,9 @@ echo "==> Linking config files..."
 link_file "$CONFIG_DIR/.zprofile" "$HOME/.zprofile"
 link_file "$CONFIG_DIR/.zshrc" "$HOME/.zshrc"
 link_file "$CONFIG_DIR/.gitconfig" "$HOME/.gitconfig"
-mkdir -p "$HOME/.config"
+mkdir -p "$HOME/.config/ghostty"
 link_file "$CONFIG_DIR/spaceship.zsh" "$HOME/.config/spaceship.zsh"
+link_file "$CONFIG_DIR/ghostty" "$HOME/.config/ghostty/config"
 
 # Ensure Homebrew is on PATH for the rest of this script (fresh shells use .zprofile)
 if [ -x /opt/homebrew/bin/brew ]; then
