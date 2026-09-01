@@ -17,18 +17,26 @@ SKIP_MACOS_DEFAULTS=1 ./install.sh
 
 Safe to re-run; existing configs are backed up before symlinking.
 
+When new packages are added to the `Brewfile`, install them with:
+
+```bash
+brew bundle --file=~/Projects/mac-setup/Brewfile
+```
+
 ## What’s included
 
 | Area | Tools |
 |------|--------|
 | Terminal | Ghostty, zsh, Oh My Zsh (+ Spaceship theme + plugins below) |
 | Editor | VS Code |
-| Browsers | Chrome, Firefox |
+| Browsers | Chrome, Firefox, Orion |
 | Node | mise + latest Node + pnpm 10 |
 | Python | uv (installs a current Python) |
 | Containers | OrbStack + Docker Desktop |
 | CLI | git, gh, glab, jq, ripgrep, fd, fzf, zoxide (z), bat, eza, tree, wget, curl, watch, htop, tmux |
-| Mac extras | Rectangle, Stats, AppCleaner, IINA |
+| Mac extras | Rectangle, Hyperkey, AppCleaner, IINA, Vorssaint |
+| Productivity | Granola |
+| Dev tools | Altair GraphQL Client |
 
 ### Prompt: Spaceship
 
