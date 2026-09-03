@@ -38,7 +38,7 @@ brew bundle --file=~/Projects/mac-setup/Brewfile
 | Python | uv (installs a current Python) |
 | Containers | OrbStack + Docker Desktop |
 | CLI | git, gh, glab, jq, ripgrep, fd, fzf, zoxide (z), bat, eza, tree, wget, curl, watch, htop, tmux |
-| Mac extras | Rectangle, Hyperkey, AppCleaner, IINA, Vorssaint |
+| Mac extras | Rectangle, Hyperkey, Homerow, Mouseless, AppCleaner, IINA, Vorssaint |
 | Productivity | Granola |
 | Dev tools | Altair GraphQL Client |
 
