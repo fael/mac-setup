@@ -25,6 +25,8 @@ brew "zsh"
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
 cask "font-code-new-roman-nerd-font"
+cask "font-commit-mono"
+cask "font-monaspace"
 
 # Apps
 cask "ghostty"
